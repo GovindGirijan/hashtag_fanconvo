@@ -34,7 +34,7 @@ const Signuptalent = () => {
                                             "email":email,
                                             "password":password,
                                             "timezone":timezone.value,
-                                            "phone":9876556788,
+                                            "phone":phoneno,
                                             "captcha": true
                                      }).then((response) => {
                                          console.log(response);
@@ -78,7 +78,7 @@ const Signuptalent = () => {
                         Last name<input type='text' placeholder='Last name' onChange={(event) => {setLastname(event.target.value)}} value={lastname} className='form-control form-group txtinput'/>
                         User name<input type='text' placeholder='User name' onChange={(event) => {setUsername(event.target.value)}} value={username} className='form-control form-group txtinput'/>
                         Email<input type='email' placeholder='Email' onChange={(event) => {setEmail(event.target.value)}} value={email} className='form-control form-group txtinput'/>
-                        Phone number<input type='number' placeholder='Phone number' onChange={(event) => {setPhoneno(event.target.value)}} value={email} className='form-control form-group txtinput'/>
+                        Phone number<input type='number' placeholder='Phone number' onChange={(event) => {setPhoneno(event.target.value)}} value={phoneno} className='form-control form-group txtinput'/>
                         Password<input type='password' placeholder='Password' onChange={(event) => {setPassword(event.target.value)}} value={password} className='form-control form-group txtinput'/>
                         Timezone<TimezoneSelect value={timezone} onChange={setTimezone} />    
                         <h3></h3>
